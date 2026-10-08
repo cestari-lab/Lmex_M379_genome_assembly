@@ -1,4 +1,4 @@
-# *Leishmania mexicana* M379 — hybrid chromosome-level genome assembly (2026)
+# *Leishmania mexicana* M379 — chromosome-level genome assembly (2026)
 
 Scripts and documentation for a chromosome-scale assembly of *Leishmania mexicana*
 (MNYC/BZ/62/M379) built from Oxford Nanopore long reads, Illumina short reads and Hi-C,
