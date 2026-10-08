@@ -58,10 +58,8 @@ scripts/
   06_repeats/01_repeatmodeler_masker.sh
   06_repeats/02_trf.sh
 R/                              ← N-block map, gap-size histogram, gaps-vs-coverage map
-utils/                          ← n_blocks.awk, assembly_stats.sh
+utils/                          ← assembly_stats.sh
 envs/                           ← software versions, conda environment
-docs/METHODS.md                 ← methods text (manuscript style)
-docs/NOTES.md                   ← fixes vs. the lab-notebook scripts, open items
 ```
 
 ## Usage
@@ -85,13 +83,9 @@ sbatch scripts/06_repeats/01_repeatmodeler_masker.sh
 sbatch scripts/06_repeats/02_trf.sh
 
 # QC on any assembly
-ASM=/path/to/assembly.fasta sbatch scripts/05_assembly_qc/01_busco_fastani.sh
 bash utils/assembly_stats.sh /path/to/assembly.fasta
 
-# plots (run in the folder written by 02_map_illumina_coverage.sh)
-Rscript /path/to/repo/R/plot_n_blocks.R
-Rscript /path/to/repo/R/plot_gap_histogram.R
-Rscript /path/to/repo/R/plot_gaps_vs_coverage.R
+
 ```
 
 ## Data
