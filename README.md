@@ -57,7 +57,6 @@ scripts/
   05_assembly_qc/03_depth_windows.sh
   06_repeats/01_repeatmodeler_masker.sh
   06_repeats/02_trf.sh
-R/                              ← N-block map, gap-size histogram, gaps-vs-coverage map
 utils/                          ← assembly_stats.sh
 envs/                           ← software versions, conda environment
 ```
@@ -83,6 +82,7 @@ sbatch scripts/06_repeats/01_repeatmodeler_masker.sh
 sbatch scripts/06_repeats/02_trf.sh
 
 # QC on any assembly
+ASM=/path/to/assembly.fasta sbatch scripts/05_assembly_qc/01_busco_fastani.sh
 bash utils/assembly_stats.sh /path/to/assembly.fasta
 
 
